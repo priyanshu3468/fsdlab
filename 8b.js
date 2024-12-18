@@ -7,7 +7,6 @@ const eventEmitter = new EventEmitter();
 const greetListener = (name) => {
   console.log(`Hello, ${name}!`);
 };
-
 // Add the event listener for the 'greet' event
 eventEmitter.on('greet', greetListener);
 
