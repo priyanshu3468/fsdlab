@@ -14,6 +14,5 @@ eventEmitter.emit('greet', 'Priyanshu'); // Output: Hello, Aditya!
 
 // Remove the event listener for the 'greet' event
 eventEmitter.removeListener('greet', greetListener);
-
 // Emit the 'greet' event again (no output since listener is removed)
 eventEmitter.emit('greet','Priyanshu');
