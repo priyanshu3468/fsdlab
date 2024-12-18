@@ -9,7 +9,6 @@ const greetListener = (name) => {
 };
 // Add the event listener for the 'greet' event
 eventEmitter.on('greet', greetListener);
-
 // Emit the 'greet' event
 eventEmitter.emit('greet', 'Priyanshu'); // Output: Hello, Aditya!
 
