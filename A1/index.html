@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="element.css" />
+  </head>
+  <body>
+    <h1>User Information Form</h1>
+    <div class="main">
+      <label for="name">Name <input type="text" name="name" /></label>
+      <label for="email">Email <input type="email" name="email" /></label>
+      <label for="age">Age <input type="number" name="age" /></label>
+      <label for="country"
+        >Country
+        <select>
+          <option>India</option>
+          <option>Australia</option>
+          <option>England</option>
+          <option>USA</option>
+        </select>
+      </label>
+      <label for="file"
+        >Resume <input type="file" id="file" name="file"
+      /></label>
+      <div for="hobbies" style="padding: 0px">Hobbies</div>
+
+      <label for="cricket"
+        >Cricket <input type="radio" id="cricket" name="sport"
+      /></label>
+
+      <label for="football"
+        >Football <input type="radio" id="football" name="sport"
+      /></label>
+    </div>
+    <br />
+    <label class="last" for="address">Address <textarea></textarea></label>
+
+    <br />
+    <br />
+    <div class="button">
+      <button>SUbmit</button>
+      <button>Reset</button>
+    </div>
+  </body>
+</html>
