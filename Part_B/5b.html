@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Page</title>
+  <style>
+    .special-class {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="bgDiv" style="padding: 20px; margin: 10px;">
+    <h2>This is a div element with an ID</h2>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+  </div>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  <button onclick="changeButtonText(this)">Click Me</button>
+
+  <p>This is a paragraph with some text.</p>
+  <p>This is another paragraph with more text.</p>
+
+  <div class="special-class">This is a div with a special class.</div>
+  
+
+  <script>
+    function changeBackgroundColor() {
+      const element = document.getElementById('bgDiv');
+      element.style.backgroundColor = 'lightblue';
+      
+    }
+    const listItems = document.querySelectorAll('li');
+    listItems.forEach(item => {
+      item.style.color = 'blue';
+    });
+    function changeButtonText(button) {
+      button.innerHTML = 'Clicked!';
+    }
+    
+    const paragraphs = document.querySelectorAll('p');
+    paragraphs.forEach(paragraph => {
+      paragraph.style.fontSize = '28px';
+    });
+
+    const special= document.querySelector('.special-class');
+    special.innerHTML = 'Text changed for the first element with special class.';
+  </script>
+</body>
+</html>
